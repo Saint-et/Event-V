@@ -1,0 +1,13 @@
+@mixin scrollbar {
+    ::-webkit-scrollbar {
+        background: transparent;
+        width: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba($primary_color, 0.3);
+        border-radius: 50px;
+        &:hover {
+          background-color: rgba($primary_color, 0.5);
+        }
+      }
+}

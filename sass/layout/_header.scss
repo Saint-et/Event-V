@@ -1,0 +1,344 @@
+header {
+  width: 100%;
+  z-index: 100;
+  color: $white;
+  overflow: hidden;
+  height: 80px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 600ms;
+  background-color: $primary_color;
+
+  &:hover {
+    height: 580px;
+    background-color: white;
+    transition: 600ms;
+    border-bottom: 10px solid $primary_color;
+  }
+  .list_menu_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .list_hidden {
+    display: flex;
+    flex-direction: column;
+    display: block;
+  }
+  .arrow_header_p {
+    margin-top: 20px;
+    transition: 600ms ease-in-out;
+    transform: rotate(90deg);
+    width: min-content;
+    height: min-content;
+  }
+  &:hover > .container_header > .arrow_header > .list_hidden > .arrow_header_p {
+    transition: 600ms ease-in-out;
+    transform: rotate(270deg);
+  }
+  .list_header {
+    opacity: 0;
+    transition: 100ms;
+    margin-top: -500px;
+    width: 100%;
+  }
+  &:hover > .list_menu > .list_menu_content > .list_header {
+    transition: 600ms 150ms ease-in-out;
+    margin-top: 20px;
+    opacity: 1;
+  }
+  .list_header_user {
+    background-color: $primary_color_shadow;
+    cursor: default;
+    transition: 100ms;
+    margin-top: -500px;
+    padding-top: 15px;
+  }
+  &:hover > .list_menu > .list_header_user {
+    transition: 600ms 150ms ease-in-out;
+    margin-top: 0px;
+  }
+  .hidden_text_nav {
+    opacity: 0;
+    transition: 400ms;
+    margin-left: 10px;
+    border-top: 2px solid rgba(255, 255, 255, 0);
+  }
+  &:hover > .hidden_text_nav {
+    transition: 600ms 500ms ease-in-out;
+    opacity: 1;
+  }
+  .hover_nav {
+    border-top: 1px solid rgba(167, 167, 167, 0);
+    border-bottom: 1px solid rgba(167, 167, 167, 0.507);
+    transition: 300ms ease-in-out;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: -25px;
+    color: rgb(31, 31, 31);
+    border-radius: 50px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary_color_shadow;
+      box-shadow: 0px 5px 5px $primary_color_shadow;
+      border-top: 1px solid rgba($primary_color, 0.2);
+      border-bottom: 1px solid $primary_color;
+      color: $primary_color;
+      transition: 300ms ease-in-out;
+      border-radius: 50px;
+      padding: 10px;
+    }
+  }
+}
+.noms_user_title_header{
+    width: 100%;
+    max-width: 450px;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.list_header_user {
+  display: none;
+}
+.container_header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2%;
+  background-color: $primary_color;
+  z-index: 2;
+  height: 210px;
+}
+.div_search {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20px;
+}
+.svg_search_icon {
+  cursor: pointer;
+  margin-top: -20px;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  display: block;
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+.search_bar {
+  display: flex;
+  align-self: center;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  height: 35px;
+  color: white;
+  margin-top: -20px;
+  width: 100%;
+  background-color: transparent;
+  font-size: 22px;
+}
+::placeholder {
+  font-size: 22px;
+  padding-left: 10px;
+  color: white;
+}
+.fa-bars {
+  margin-top: 25%;
+  width: 50px;
+  height: 50px;
+}
+.header_icon {
+  display: flex;
+  align-self: center;
+}
+.arrow_header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.text_nav {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+  margin-top: -20px;
+}
+.header_icon_n2 {
+  display: none;
+}
+.icon_filter_Contact {
+  color: mediumslateblue;
+}
+.icon_filter_profil {
+  color: blue;
+}
+.icon_filter_Evenement {
+  color: $primary_color;
+}
+.icon_filter_Message {
+  color: blue;
+}
+.icon_filter_Aide {
+  color: mediumslateblue;
+}
+.icon_filter_Reglage {
+  color: $primary_color;
+}
+.icon_filter_Utilisateur {
+  margin-right: 10px;
+  color: rgb(0, 120, 0);
+}
+.icon_filter_brush,
+.icon_filter_envelope{
+  margin-right: 10px;
+  color: $primary_color;
+}
+.container_hidden_text_nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+@media all and (min-width: 1090px) {
+  header {
+    position: absolute;
+    height: 80px;
+    &:hover {
+      height: 500px;
+    }
+  }
+  .container_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: $primary_color;
+    z-index: 2;
+    height: 150px;
+    margin-top: -30px;
+  }
+  .title_font {
+    margin-top: 10px;
+  }
+  .arrow_header {
+    width: 0%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -20px;
+  }
+  .text_nav {
+    font-size: 30px;
+    margin-top: -25px;
+  }
+  .list_hidden {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: -50px;
+  }
+  .list_hidden_text {
+    font-size: 20px;
+  }
+  .div_search {
+    display: flex;
+    width: 50%;
+  }
+  .search_bar {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 400ms;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.288);
+      transition: 200ms;
+    }
+  }
+  .svg_search_icon {
+    margin-top: 0px;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+  }
+  ::placeholder {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+  .header_icon {
+    display: none;
+  }
+  .list_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .list_menu_content {
+    width: 100%;
+    max-width: 500px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-right: 2px solid rgba($primary_color, 0.5);
+  }
+  .list_header_user {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .img_user_header {
+    object-position: top;
+    padding: 5px;
+    border: 5px solid $box_shadow;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+  }
+  .cart_user_header_text {
+    display: flex;
+    flex-direction: row;
+  }
+  .list_header {
+    width: 100%;
+    max-width: 250px;
+  }
+  .connect_text {
+    color: rgb(194, 0, 0);
+    border-bottom: 1px solid rgba(107, 0, 0, 0);
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 300ms;
+    &:hover {
+      transition: 300ms;
+      color: rgb(255, 0, 0);
+      text-decoration-line: underline;
+    }
+  }
+  .hidden_text_nav {
+    display: flex;
+    width: 100%;
+  }
+  .header_icon_n2 {
+    display: none;
+  }
+}

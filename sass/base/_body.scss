@@ -1,0 +1,76 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  overflow: overlay;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  ::selection {
+    background-color: rgba(white, 0.4);
+  }
+  .title_section {
+    margin-top: 50px;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: max-content;
+    margin-left: 30px;
+  }
+  .title_font {
+    cursor: default;
+  }
+  .cursor_pointer_copytext {
+    cursor: pointer;
+    overflow: hidden;
+      &:hover {
+        text-decoration: underline;
+      }
+  
+  }
+  .noms_user {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: black;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  h2{
+    font-size: 25px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .hover_nav {
+    font-weight: 400;
+  }
+  .white {
+    color: $white;
+  }
+  .text_black {
+    color: $text_black;
+  }
+  li {
+    list-style: none;
+  }
+  .list_cursor {
+    cursor: default;
+  }
+  .cursor_pointer {
+    cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  
+}

@@ -1,0 +1,144 @@
+@include scrollbar;
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  background-color: black;
+  background-color: $primary_color_shadow;
+}
+.section_checkbox {
+  display: flex;
+  justify-content: center;
+  background-color: $primary_color;
+}
+.article_checkbox {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  height: 300px;
+  border: 5px solid $primary_color;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 20px;
+}
+.container_checkbox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid $primary_color;
+}
+#section_contact {
+  display: flex;
+  justify-content: center;
+}
+.article_contact_n1 {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+}
+#article_contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 700px;
+  overflow: scroll;
+  padding: 15px;
+  background-color: $primary_color;
+  border: 1px solid $primary_color_shadow;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.img_contact_container {
+  border-radius: 10px;
+  object-position: top;
+  overflow: hidden;
+  width: 100%;
+}
+.container_contact {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $primary_color;
+  width: 100%;
+  padding: 1px;
+  height: 400px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  &:hover{
+    transition: 400ms ease-in-out;
+    transform: scale(1.02);
+}
+  .option_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 60%;
+    height: 110%;
+  }
+  .text_article_contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .text_article_content_contact {
+    margin-left: 5px;
+  }
+  .text_profil_contact {
+    color: $primary_color;
+  }
+  .text_message_contact {
+    color: blue;
+  }
+  .text_delete_contact {
+    color: red;
+  }
+  .text_profil_contact:hover,
+  .text_message_contact:hover,
+  .text_delete_contact:hover{
+      cursor: pointer;
+    text-decoration: underline;
+  }
+}
+.name_contact {
+  font-size: 20px;
+  width: 100%;
+}
+@media all and (min-width: 768px) {
+  .container_contact {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid $primary_color;
+    width: 48%;
+    padding: 1px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 400ms ease-in-out;
+
+    
+  }
+  .img_contact_container {
+    border-radius: 10px;
+    object-position: top;
+    overflow: hidden;
+    width: 100%;
+    margin: 5px;
+    max-width: 100px;
+  }
+  .option_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 60%;
+    height: 110%;
+  }
+}

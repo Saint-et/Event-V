@@ -1,0 +1,11 @@
+footer{
+    padding-top: 10px;
+    background-color: $primary_color;
+    display: flex;
+    flex-direction: column;
+}
+.footer_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
