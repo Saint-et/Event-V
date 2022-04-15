@@ -1,11 +1,14 @@
 //apparition des card de groupes
+section,
+#connextion,
+#inscription,
 .card_article,
 .text_delete_contact,
 #profilModif {
-    animation: fadein 0.5s;
-    -moz-animation: fadein 0.5s; /* Firefox */
-    -webkit-animation: fadein 0.5s; /* Safari et Chrome */
-    -o-animation: fadein 0.5s; /* Opera */
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari et Chrome */
+    -o-animation: fadein 1s; /* Opera */
 }
 @keyframes fadein {
     from {

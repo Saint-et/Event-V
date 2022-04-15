@@ -1,0 +1,80 @@
+@include scrollbar;
+main {
+    padding-top: 80px;
+    margin: auto;
+    background-color: $primary_color_dark;
+  }
+  #profilModif_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .description_container_modif{
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 10px;
+  }
+  .description_container_modifn2{
+    width: 100%;
+    
+  }
+  .valide{
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+  }
+  .valide p{
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 300ms;
+    margin-top: 3px;
+  }
+  .valide p:hover{
+    transition: 300ms;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: $box_shadow;
+  }
+  #descrip_input{
+    width: 100%;
+    height: 100%;
+    max-height: 480px;
+    min-height: 480px;
+    border: none;
+    background-color: $primary_color;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    padding: 10px;
+    color: white;
+
+    &::placeholder{
+      color: white;
+    }
+  }
+  #descrip_input::placeholder{
+    color: $primary_color;
+    text-decoration: underline;
+  }
+  @media all and (min-width: 768px) {
+  #descrip_input{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    min-height: 300px;
+    border: none;
+    background-color: $primary_color;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    padding: 20px;
+
+    &::placeholder{
+      color: white;
+    }
+  }
+  }

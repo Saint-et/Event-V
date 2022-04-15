@@ -2,7 +2,7 @@
 main {
   padding-top: 80px;
   margin: auto;
-  background-color: $primary_color_shadow;
+  background-color: $primary_color_dark;
 }
 .banniere {
   width: 100%;
@@ -27,28 +27,13 @@ main {
   width: 100%;
   max-width: min-content;
 }
-#profilModif_section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .profilModif{
   background-color: $primary_color;
   width: 100%;
-  max-width: max-content;
+  max-width: 600px;
   position: absolute;
   z-index: 20;
-  position: fixed;
   padding: 30px;
-}
-.description_container_modif{
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-.description_container_modifn2{
-  width: 100%;
-  max-width: 800px;
 }
 .param_index{
   display: flex;
@@ -60,42 +45,6 @@ main {
 }
 .param_index > p:hover {
   text-decoration: underline;
-}
-#descrip_input{
-  width: 100%;
-  height: 100%;
-  max-height: 480px;
-  min-height: 480px;
-  border: none;
-  background-color: white;
-  font-size: 20px;
-  font-weight: 600;
-  outline: none;
-  padding: 10px;
-}
-#descrip_input::placeholder{
-  color: $primary_color;
-  text-decoration: underline;
-}
-.valide{
-  justify-content: space-around;
-  display: flex;
-  width: 100%;
-}
-.valide p{
-  font-size: 22px;
-  padding: 10px;
-  border-radius: 10px;
-  transition: 300ms;
-  margin-top: 3px;
-}
-.valide p:hover{
-  transition: 300ms;
-  cursor: pointer;
-  text-decoration: underline;
-  background-color: $box_shadow;
-  
-  
 }
 .pt_p{
   display: flex;
@@ -152,24 +101,25 @@ main {
   border-radius: 25px;
   margin: 10px;
   cursor: pointer;
-  background: #ffff;
-  border: 2px solid rgba($primary_color, 0.5);
+  background-color: $primary_color;
+  border: 2px solid rgba(white, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
   &:hover {
-    border: 2px solid blue;
+    background-color: rgba(white, 0.2);
+    border: 2px solid white;
     transition: 300ms;
   }
   &:hover > .arrow_card {
     transition: 300ms;
-    color: blue;
+    color: white;
   }
   &:hover > .card_article_last_text {
     transition: 300ms;
-    color: blue;
+    color: white;
   }
 }
 .arrow_card {
@@ -189,7 +139,7 @@ main {
   border-radius: 25px;
   margin: 5px;
   cursor: default;
-  background: #ffff;
+  background: $primary_color;
   border-bottom: 1px solid rgba($primary_color, 0.2);
 
   &:hover {
@@ -219,16 +169,14 @@ main {
   justify-content: center;
   cursor: pointer;
   color: red;
-  background-color: rgba(red, 0.4);
+  background-color: rgba(red, 0.2);
   width: 300px;
-  margin-top: -5px;
-  padding-top: 5px;
   height: 50px;
   margin-left: -60px;
   transition: 300ms;
   &:hover {
     transition: 300ms;
-    box-shadow: inset 5px 5px 5px rgba(red, 0.5);
+    background-color: rgba(red, 0.6);
   }
 }
 .all_card_event_container {
@@ -385,7 +333,7 @@ main {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-    background-color: $primary_color_shadow;
+    background-color: $primary_color;
     padding: 10px;
     border-radius: 25px;
     margin-left: 10%;
@@ -405,17 +353,5 @@ main {
     border: 10px solid $box_shadow;
     border-radius: 10px;
   }
-  #descrip_input{
-    width: 100%;
-    height: 100%;
-    max-height: 300px;
-    min-height: 300px;
-    border: none;
-    background-color: white;
-    font-size: 20px;
-    font-weight: 600;
-    outline: none;
-    border-radius: 10px;
-    padding: 20px;
-  }
+ 
 }

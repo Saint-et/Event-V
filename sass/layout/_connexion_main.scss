@@ -1,0 +1,82 @@
+@include scrollbar;
+main{
+    background-color: $primary_color_dark;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    
+}
+article{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+.title_form{
+    margin-top: 50px;
+}
+.input_container{
+    margin-bottom: 50px;
+}
+.btn_in{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+#submit,
+.btn_in{
+    padding: 10px;
+    border-radius: 50px;
+    outline: none;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 100%;
+    background-color: $primary_color;
+    color: white;
+    border: none;
+    transition: 400ms ease-in-out;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.288);
+        transition: 200ms ease-in-out;
+      }
+}
+.input_p {
+  display: flex;
+  align-self: center;
+  width: 100%;
+  border-radius: 50px;
+  background-color: $primary_color;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 400ms ease-in-out;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  
+  
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover, 
+  &:-webkit-autofill:focus {
+    -webkit-text-fill-color: white;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.288);
+    transition: 200ms ease-in-out;
+  }
+}
+.para_p{
+    width: 100%;
+}

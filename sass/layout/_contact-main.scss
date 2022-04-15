@@ -4,7 +4,7 @@ main {
   flex-direction: column;
   padding-top: 100px;
   background-color: black;
-  background-color: $primary_color_shadow;
+  background-color: $primary_color_dark;
 }
 .section_checkbox {
   display: flex;
@@ -14,11 +14,9 @@ main {
 .article_checkbox {
   width: 100%;
   max-width: 400px;
-  background-color: white;
+  background-color: $primary_color;
   height: 300px;
-  border: 5px solid $primary_color;
   padding: 10px;
-  border-radius: 50px;
   margin: 20px;
 }
 .container_checkbox {
@@ -27,7 +25,7 @@ main {
   width: 100%;
   justify-content: space-between;
   padding: 10px;
-  border-bottom: 1px solid $primary_color;
+  border-bottom: 1px solid white;
 }
 #section_contact {
   display: flex;

@@ -1,53 +1,3 @@
-section,
-#connextion,
-#inscription,
-.card_article,
-.text_delete_contact,
-#profilModif {
-  animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  /* Firefox */
-  -webkit-animation: fadein 1s;
-  /* Safari et Chrome */
-  -o-animation: fadein 1s;
-  /* Opera */
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein {
-  /* sur Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  /* sur Safari et Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein {
-  /* sur Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .toggle {
   position: relative;
   display: block;
@@ -562,154 +512,88 @@ header .hover_nav:hover {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  padding-top: 100px;
-  background-color: black;
+  padding-top: 80px;
+  margin: auto;
   background-color: #090b0e;
 }
 
-.section_checkbox {
+#profilModif_section {
   display: flex;
   justify-content: center;
-  background-color: #282f36;
-}
-
-.article_checkbox {
-  width: 100%;
-  max-width: 400px;
-  background-color: #282f36;
-  height: 300px;
-  padding: 10px;
-  margin: 20px;
-}
-
-.container_checkbox {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-  padding: 10px;
-  border-bottom: 1px solid white;
-}
-
-#section_contact {
-  display: flex;
-  justify-content: center;
-}
-
-.article_contact_n1 {
-  display: flex;
-  flex-direction: column;
-  width: 97%;
-}
-
-#article_contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 700px;
-  overflow: scroll;
-  padding: 15px;
-  background-color: #282f36;
-  border: 1px solid rgba(40, 47, 54, 0.1);
-  margin-bottom: 50px;
-  border-radius: 10px;
-}
-#article_contact::-webkit-scrollbar {
-  display: none;
-}
-
-.img_contact_container {
-  border-radius: 10px;
-  object-position: top;
-  overflow: hidden;
-  width: 100%;
-}
-
-.container_contact {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #282f36;
-  width: 100%;
-  padding: 1px;
-  height: 400px;
-  margin-bottom: 20px;
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.container_contact:hover {
-  transition: 400ms ease-in-out;
-  transform: scale(1.02);
-}
-.container_contact .option_contact {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  overflow: hidden;
-  width: 60%;
-  height: 110%;
 }
-.container_contact .text_article_contact {
+
+.description_container_modif {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px;
+}
+
+.description_container_modifn2 {
   width: 100%;
 }
-.container_contact .text_article_content_contact {
-  margin-left: 5px;
+
+.valide {
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
 }
-.container_contact .text_profil_contact {
-  color: #282f36;
+
+.valide p {
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 300ms;
+  margin-top: 3px;
 }
-.container_contact .text_message_contact {
-  color: blue;
-}
-.container_contact .text_delete_contact {
-  color: red;
-}
-.container_contact .text_profil_contact:hover,
-.container_contact .text_message_contact:hover,
-.container_contact .text_delete_contact:hover {
+
+.valide p:hover {
+  transition: 300ms;
   cursor: pointer;
+  text-decoration: underline;
+  background-color: rgba(161, 161, 161, 0.4);
+}
+
+#descrip_input {
+  width: 100%;
+  height: 100%;
+  max-height: 480px;
+  min-height: 480px;
+  border: none;
+  background-color: #282f36;
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+  padding: 10px;
+  color: white;
+}
+#descrip_input::placeholder {
+  color: white;
+}
+
+#descrip_input::placeholder {
+  color: #282f36;
   text-decoration: underline;
 }
 
-.name_contact {
-  font-size: 20px;
-  width: 100%;
-}
-
 @media all and (min-width: 768px) {
-  .container_contact {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid #282f36;
-    width: 48%;
-    padding: 1px;
-    height: 120px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 400ms ease-in-out;
-  }
-
-  .img_contact_container {
-    border-radius: 10px;
-    object-position: top;
-    overflow: hidden;
+  #descrip_input {
     width: 100%;
-    margin: 5px;
-    max-width: 100px;
+    height: 100%;
+    max-height: 300px;
+    min-height: 300px;
+    border: none;
+    background-color: #282f36;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    padding: 20px;
   }
-
-  .option_contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    width: 60%;
-    height: 110%;
+  #descrip_input::placeholder {
+    color: white;
   }
 }
 footer {
@@ -725,4 +609,4 @@ footer {
   justify-content: center;
 }
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=option.css.map */
