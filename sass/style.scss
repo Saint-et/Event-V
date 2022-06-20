@@ -1,10 +1,14 @@
 @import "./utils/variable";
 @import "./utils/animation";
 @import "./utils/scrollbar";
-
-@import "./components/checkbox";
+@import "./utils/spinner";
 
 @import "./base/body";
+
+@import "./components/bouton";
+@import "./components/checkbox";
+
 @import "./layout/header";
 @import "./layout/main";
+@import "./layout/profil_description";
 @import "./layout/footer";

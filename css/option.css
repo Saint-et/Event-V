@@ -148,13 +148,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 600ms;
+  transition: 500ms;
   background-color: #282f36;
 }
 header:hover {
   height: 580px;
-  background-color: #090b0e;
-  transition: 600ms;
+  background-color: #0f1216;
+  transition: 500ms;
   border-bottom: 10px solid #282f36;
 }
 header .list_menu_content {
@@ -169,13 +169,13 @@ header .list_hidden {
 }
 header .arrow_header_p {
   margin-top: 20px;
-  transition: 600ms ease-in-out;
+  transition: 500ms ease-in-out;
   transform: rotate(90deg);
   width: min-content;
   height: min-content;
 }
 header:hover > .container_header > .arrow_header > .list_hidden > .arrow_header_p {
-  transition: 600ms ease-in-out;
+  transition: 500ms ease-in-out;
   transform: rotate(270deg);
 }
 header .list_header {
@@ -185,7 +185,7 @@ header .list_header {
   width: 100%;
 }
 header:hover > .list_menu > .list_menu_content > .list_header {
-  transition: 600ms 150ms ease-in-out;
+  transition: 500ms 150ms ease-in-out;
   margin-top: 20px;
   opacity: 1;
 }
@@ -197,7 +197,7 @@ header .list_header_user {
   padding-top: 15px;
 }
 header:hover > .list_menu > .list_header_user {
-  transition: 600ms 150ms ease-in-out;
+  transition: 500ms 150ms ease-in-out;
   margin-top: 0px;
 }
 header .hidden_text_nav {
@@ -207,7 +207,7 @@ header .hidden_text_nav {
   border-top: 2px solid rgba(255, 255, 255, 0);
 }
 header:hover > .hidden_text_nav {
-  transition: 600ms 500ms ease-in-out;
+  transition: 500ms 500ms ease-in-out;
   opacity: 1;
 }
 header .hover_nav {
@@ -460,7 +460,7 @@ header .hover_nav:hover {
   .img_user_header {
     object-position: top;
     padding: 5px;
-    border: 5px solid rgba(161, 161, 161, 0.4);
+    border: 2px solid #007800;
     width: 200px;
     height: 200px;
     border-radius: 100px;
@@ -499,7 +499,7 @@ header .hover_nav:hover {
   }
 }
 ::-webkit-scrollbar {
-  background: transparent;
+  background-color: #0f1216;
   width: 10px;
 }
 
@@ -513,25 +513,61 @@ header .hover_nav:hover {
 
 main {
   padding-top: 80px;
-  margin: auto;
-  background-color: #090b0e;
+  padding-bottom: 100px;
+  background-color: #0f1216;
 }
 
-#profilModif_section {
+.profilModif_section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Drop_image_here {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  border: 1px dashed white;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 400ms ease-in-out;
+}
+.Drop_image_here:hover {
+  background-color: rgba(161, 161, 161, 0.4);
+  transition: 200ms ease-in-out;
 }
 
 .description_container_modif {
   display: flex;
+  justify-content: center;
   width: 100%;
   max-width: 800px;
   margin: 10px;
 }
 
 .description_container_modifn2 {
+  background-color: #282f36;
+  border-radius: 20px;
   width: 100%;
+  max-width: 700px;
+}
+
+.description_container_modifn2 > p {
+  padding: 10px;
+  transition: 400ms ease-in-out;
+  width: max-content;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.description_container_modifn2 > p:hover {
+  padding: 10px;
+  background-color: rgba(161, 161, 161, 0.4);
+  transition: 200ms ease-in-out;
 }
 
 .valide {
@@ -546,16 +582,22 @@ main {
   border-radius: 10px;
   transition: 300ms;
   margin-top: 3px;
-}
-
-.valide p:hover {
-  transition: 300ms;
+  background-color: #282f36;
+  transition: 300ms ease-in-out;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 50px;
   cursor: pointer;
-  text-decoration: underline;
-  background-color: rgba(161, 161, 161, 0.4);
+}
+.valide p:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 300ms ease-in-out;
+  border-radius: 50px;
+  padding: 10px;
 }
 
 #descrip_input {
+  overflow: overlay;
   width: 100%;
   height: 100%;
   max-height: 480px;
@@ -572,6 +614,11 @@ main {
   color: white;
 }
 
+.input_option {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 #descrip_input::placeholder {
   color: #282f36;
   text-decoration: underline;
@@ -579,6 +626,7 @@ main {
 
 @media all and (min-width: 768px) {
   #descrip_input {
+    overflow: overlay;
     width: 100%;
     height: 100%;
     max-height: 300px;

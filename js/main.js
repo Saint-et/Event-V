@@ -50,4 +50,12 @@ function copyText() {
   })})
   }
   
- 
+function spinner() {
+  let spinner = document.createElement("div")
+  spinner.className = "loadingio-spinner-eclipse-bujn9h2kqoe";
+  img_container.appendChild(spinner);
+
+  let spinner1 = document.createElement("div")
+  spinner.className = "ldio-3mpdkwhpdxf";
+  spinner.appendChild(spinner1);
+}

@@ -13,7 +13,7 @@ function delete_contact_true() {
     
     if (checkbox.checked == true) {
         
-        del.innerHTML = "Supprimer";
+        del.innerHTML = "❌ Supprimer";
     }else if (hidden.checked == false) {
         del.innerHTML = ""
     }

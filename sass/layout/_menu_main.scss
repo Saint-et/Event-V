@@ -1,0 +1,137 @@
+@include scrollbar;
+main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+    background-color: $primary_color_dark;
+  }
+  article {
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+  }
+.container_form{
+    margin-bottom: 20px;
+}
+h1{
+    margin-top: 500px;
+    color: white;
+}
+.input_p {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    border-radius: 50px;
+    background-color: $primary_color;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 400ms ease-in-out;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.288);
+      transition: 200ms;
+    }
+    
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:focus {
+      -webkit-text-fill-color: white;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+}
+#descrip_input{
+    width: 100%;
+    height: 100%;
+    max-height: 480px;
+    min-height: 480px;
+    border: none;
+    background-color: $primary_color;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    padding: 10px;
+    color: white;
+
+    &::placeholder{
+      color: white;
+    }
+  }
+  #descrip_input::placeholder{
+    color: $primary_color;
+    text-decoration: underline;
+  }
+  .description_container_modifn2{
+    background-color: $primary_color;
+    border-radius: 20px;
+    width: 100%;
+    height: 180px;
+    
+  }
+  .description_container_modifn2 > p {
+    padding: 10px;
+    transition: 400ms ease-in-out;
+    width: max-content;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  .description_container_modifn2 > p:hover {
+    padding: 10px;
+    background-color: $box_shadow;
+    transition: 200ms ease-in-out;
+  }
+  .Drop_image_here{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border: 1px dashed white;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 400ms ease-in-out;
+
+    &:hover{
+      background-color: $box_shadow;
+      transition: 200ms ease-in-out;
+    }
+  }
+  .valideBtn{
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: max-content;
+    transition: 400ms ease-in-out;
+
+    &:hover{
+      transition: 200ms ease-in-out;
+      padding: 10px;
+      background-color: $box_shadow;
+    }
+  }
+  @media all and (min-width: 768px) {
+    #descrip_input{
+      width: 100%;
+      height: 100%;
+      max-height: 300px;
+      min-height: 300px;
+      border: none;
+      background-color: $primary_color;
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      outline: none;
+      border-radius: 10px;
+      padding: 20px;
+  
+      &::placeholder{
+        color: white;
+      }
+    }
+    }

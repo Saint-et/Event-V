@@ -3,19 +3,16 @@ main {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  background-color: black;
   background-color: $primary_color_dark;
 }
 .section_checkbox {
   display: flex;
   justify-content: center;
-  background-color: $primary_color;
+  background-color: $primary_color_dark;
 }
 .article_checkbox {
   width: 100%;
   max-width: 400px;
-  background-color: $primary_color;
-  height: 300px;
   padding: 10px;
   margin: 20px;
 }
@@ -26,6 +23,16 @@ main {
   justify-content: space-between;
   padding: 10px;
   border-bottom: 1px solid white;
+}
+.container_search_contact {
+  height: 120px;
+  border-bottom: 1px solid white;
+}
+.container_search_contact > p {
+  margin-bottom: 40px;
+}
+#search_contact{
+  width: 100%;
 }
 #section_contact {
   display: flex;
@@ -38,47 +45,43 @@ main {
 }
 #article_contact {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  height: 700px;
+  height: 100%;
+  min-height: 800px;
   overflow: scroll;
   padding: 15px;
-  background-color: $primary_color;
+  overflow: overlay;
   border: 1px solid $primary_color_shadow;
   margin-bottom: 50px;
   border-radius: 10px;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  @include scrollbar;
 }
 .img_contact_container {
-  border-radius: 10px;
-  object-position: top;
-  overflow: hidden;
-  width: 100%;
+  display: none;
 }
 .container_contact {
   display: flex;
-  flex-direction: column;
-  border: 1px solid $primary_color;
+  align-items: center;
   width: 100%;
   padding: 1px;
-  height: 400px;
+  height: 100px;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  &:hover{
-    transition: 400ms ease-in-out;
-    transform: scale(1.02);
-}
+  background-color: $primary_color;
+
   .option_contact {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     overflow: hidden;
-    width: 60%;
-    height: 110%;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .option_contact > p {
+    margin-left: 2px;
+    margin-right: 2px;
+    @include bouton;
   }
   .text_article_contact {
     display: flex;
@@ -88,20 +91,10 @@ main {
   .text_article_content_contact {
     margin-left: 5px;
   }
-  .text_profil_contact {
-    color: $primary_color;
-  }
-  .text_message_contact {
-    color: blue;
-  }
-  .text_delete_contact {
-    color: red;
-  }
   .text_profil_contact:hover,
   .text_message_contact:hover,
   .text_delete_contact:hover{
       cursor: pointer;
-    text-decoration: underline;
   }
 }
 .name_contact {
@@ -112,31 +105,23 @@ main {
   .container_contact {
     display: flex;
     flex-direction: row;
-    border: 1px solid $primary_color;
-    width: 48%;
+    width: 100%;
     padding: 1px;
     height: 120px;
-    background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    transition: 400ms ease-in-out;
 
-    
   }
   .img_contact_container {
+    display: flex;
     border-radius: 10px;
     object-position: top;
     overflow: hidden;
     width: 100%;
     margin: 5px;
-    max-width: 100px;
+    max-width: 120px;
   }
-  .option_contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    width: 60%;
-    height: 110%;
+  #search_contact{
+    width: 100%;
   }
 }

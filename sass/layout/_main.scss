@@ -10,7 +10,7 @@ main {
   justify-content: center;
   height: 300px;
   color: $white;
-  background-color: $primary_color;
+  background-color: $primary_color_dark;
   overflow: hidden;
 }
 .img_01bann{
@@ -59,16 +59,7 @@ main {
 .pt_p_img{
   object-position: top;
 }
-.description_container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  background-color: $primary_color_shadow;
-  padding: 10px;
-  border-radius: 25px;
-  margin-left: 10%;
-  margin-right: 10%;
-}
+
 #groupes_rejoint {
   padding-top: 10px;
   width: 100%;
@@ -78,6 +69,7 @@ main {
 }
 #article_addgroup {
   width: 98%;
+  max-width: 1800px;
   display: flex;
   flex-direction: row;
   overflow-x: auto;
@@ -181,7 +173,6 @@ main {
 }
 .all_card_event_container {
   width: 100%;
-  padding-bottom: 50px;
 }
 .card_event_container {
   display: flex;
@@ -191,18 +182,16 @@ main {
 }
 #article_event {
   overflow: scroll;
+  overflow: overlay;
   border-radius: 15px;
   height: 800px;
   margin-right: 15px;
   margin-left: 15px;
   border: 1px solid $primary_color_shadow;
-  background-color: $primary_color;
   padding-top: 10px;
   padding-bottom: 10px;
 
-  &::-webkit-scrollbar{
-    display: none;
-  }
+  @include scrollbar;
 }
 .card_event {
   display: flex;
@@ -215,7 +204,7 @@ main {
   height: 420px;
   overflow: hidden;
   margin: 25px;
-  background-color: white;
+  background-color: $primary_color;
 }
 .card_event-text {
   padding-right: 5px;
@@ -236,33 +225,12 @@ main {
   max-width: fit-content;
   cursor: pointer;
 }
+.card_event_negatif,
 .card_event_positif {
-  color: green;
-  font-size: 18px;
+@include bouton;
 }
-.card_event_positif:hover {
-  color: rgb(0, 196, 0);
-  text-decoration: underline;
-}
-.card_event_negatif {
-  color: rgb(194, 0, 0);
-  font-size: 18px;
-}
-.card_event_negatif:hover {
-  color: rgb(255, 0, 0);
-  text-decoration: underline;
-}
-@media all and (min-width: 510px) {
-  .description_container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    background-color: $primary_color_shadow;
-    padding: 10px;
-    border-radius: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+@media all and (min-width: 600px) {
+
   .card_event {
     display: flex;
     flex-direction: row;
@@ -329,26 +297,7 @@ main {
     overflow: hidden;
     margin: 25px;
   }
-  .description_container {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    background-color: $primary_color;
-    padding: 10px;
-    border-radius: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  .pt_p{
-    display: flex;
-    justify-self: center;
-    width: 30%;
-    min-width: 300px;
-    height: 400px;
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 10px;
-  }
+  
   .profilModif{
     border: 10px solid $box_shadow;
     border-radius: 10px;

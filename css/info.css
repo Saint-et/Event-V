@@ -148,13 +148,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 600ms;
+  transition: 500ms;
   background-color: #282f36;
 }
 header:hover {
   height: 580px;
-  background-color: #090b0e;
-  transition: 600ms;
+  background-color: #0f1216;
+  transition: 500ms;
   border-bottom: 10px solid #282f36;
 }
 header .list_menu_content {
@@ -169,13 +169,13 @@ header .list_hidden {
 }
 header .arrow_header_p {
   margin-top: 20px;
-  transition: 600ms ease-in-out;
+  transition: 500ms ease-in-out;
   transform: rotate(90deg);
   width: min-content;
   height: min-content;
 }
 header:hover > .container_header > .arrow_header > .list_hidden > .arrow_header_p {
-  transition: 600ms ease-in-out;
+  transition: 500ms ease-in-out;
   transform: rotate(270deg);
 }
 header .list_header {
@@ -185,7 +185,7 @@ header .list_header {
   width: 100%;
 }
 header:hover > .list_menu > .list_menu_content > .list_header {
-  transition: 600ms 150ms ease-in-out;
+  transition: 500ms 150ms ease-in-out;
   margin-top: 20px;
   opacity: 1;
 }
@@ -197,7 +197,7 @@ header .list_header_user {
   padding-top: 15px;
 }
 header:hover > .list_menu > .list_header_user {
-  transition: 600ms 150ms ease-in-out;
+  transition: 500ms 150ms ease-in-out;
   margin-top: 0px;
 }
 header .hidden_text_nav {
@@ -207,7 +207,7 @@ header .hidden_text_nav {
   border-top: 2px solid rgba(255, 255, 255, 0);
 }
 header:hover > .hidden_text_nav {
-  transition: 600ms 500ms ease-in-out;
+  transition: 500ms 500ms ease-in-out;
   opacity: 1;
 }
 header .hover_nav {
@@ -460,7 +460,7 @@ header .hover_nav:hover {
   .img_user_header {
     object-position: top;
     padding: 5px;
-    border: 5px solid rgba(161, 161, 161, 0.4);
+    border: 2px solid #007800;
     width: 200px;
     height: 200px;
     border-radius: 100px;

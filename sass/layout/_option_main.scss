@@ -1,23 +1,58 @@
 @include scrollbar;
 main {
     padding-top: 80px;
-    margin: auto;
+    padding-bottom: 100px;
     background-color: $primary_color_dark;
   }
-  #profilModif_section{
+  .profilModif_section{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+  .Drop_image_here{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border: 1px dashed white;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 400ms ease-in-out;
+
+    &:hover{
+      background-color: $box_shadow;
+      transition: 200ms ease-in-out;
+    }
   }
   .description_container_modif{
     display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 800px;
     margin: 10px;
   }
   .description_container_modifn2{
+    background-color: $primary_color;
+    border-radius: 20px;
     width: 100%;
+    max-width: 700px;
     
+  }
+  .description_container_modifn2 > p {
+    padding: 10px;
+    transition: 400ms ease-in-out;
+    width: max-content;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  .description_container_modifn2 > p:hover {
+    padding: 10px;
+    background-color: $box_shadow;
+    transition: 200ms ease-in-out;
   }
   .valide{
     justify-content: space-around;
@@ -30,14 +65,12 @@ main {
     border-radius: 10px;
     transition: 300ms;
     margin-top: 3px;
+
+    @include bouton;
   }
-  .valide p:hover{
-    transition: 300ms;
-    cursor: pointer;
-    text-decoration: underline;
-    background-color: $box_shadow;
-  }
+  
   #descrip_input{
+    overflow: overlay;
     width: 100%;
     height: 100%;
     max-height: 480px;
@@ -54,12 +87,17 @@ main {
       color: white;
     }
   }
+  .input_option{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   #descrip_input::placeholder{
     color: $primary_color;
     text-decoration: underline;
   }
   @media all and (min-width: 768px) {
   #descrip_input{
+    overflow: overlay;
     width: 100%;
     height: 100%;
     max-height: 300px;

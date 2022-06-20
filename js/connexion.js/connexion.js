@@ -8,23 +8,23 @@ function displayConnexion() {
     document.getElementById("section_connextion").appendChild(article)
 
     let img = document.createElement("img");
-    img.src = "/picture/logo/logo_transparent.png"
+    img.src = "/frontend/picture/logo/logo_transparent.png"
     img.alt = ""
     article.appendChild(img);
 
     let title = document.createElement("h1")
     title.className = "main_title white";
-    title.innerText = "Bienvenue sur Event-V";
+    title.innerText = "Welcome to Event-V";
     article.appendChild(title);
 
     let descrip = document.createElement("p")
     descrip.className = "white para_p";
-    descrip.innerText = "Ce site a été créer dans le but d'aidé à la gestion de vos évènements que ce soit dans une Entreprise, bureau, petit groupe, jeux...";
+    descrip.innerText = "This site was created with the aim of helping to manage your events whether in a company, office, small group, games...";
     article.appendChild(descrip);
 
     let titleN2 = document.createElement("h2")
     titleN2.className = "title_form white";
-    titleN2.innerText = "Connecter vous";
+    titleN2.innerText = "Login";
     article.appendChild(titleN2);
 
 
@@ -34,7 +34,7 @@ function displayConnexion() {
 
     let email = document.createElement("p");
     email.className = "white";
-    email.innerText = "*Email";
+    email.innerText = "*E-mail";
     div1.appendChild(email);
 
     let inputEmail = document.createElement("input")
@@ -49,7 +49,7 @@ function displayConnexion() {
 
     let pass = document.createElement("p");
     pass.className = "white";
-    pass.innerText = "*Mot de passe (8 caractère minimum)";
+    pass.innerText = "*Password (8 character minimum)";
     div2.appendChild(pass);
 
     let inputPass = document.createElement("input")
@@ -66,12 +66,12 @@ function displayConnexion() {
     let submit = document.createElement("input")
     submit.type = "submit"
     submit.id = "submit"
-    submit.value = "Connexion"
+    submit.value = "Login"
     div3.appendChild(submit);
 
     let textInscrip = document.createElement("p");
     textInscrip.className = "white para_p";
-    textInscrip.innerText = "Vous ne possédez pas encore de compte ?";
+    textInscrip.innerText = "Still do not have an account ?";
     article.appendChild(textInscrip);
 
     let div4 = document.createElement("div");
@@ -81,12 +81,12 @@ function displayConnexion() {
     let btnInscrip = document.createElement("p");
     btnInscrip.className = "btn_in";
     btnInscrip.id = "inscription";
-    btnInscrip.innerText = "*Inscription";
+    btnInscrip.innerText = "*Registration";
     div4.appendChild(btnInscrip);
 
     let descrip2 = document.createElement("p");
     descrip2.className = "white para_p";
-    descrip2.innerText = "Ici vous pouvez retrouver des groupes spécialisés dans certains évènement Entreprise, bureau, petit groupe, jeux..., Créer et personnalisé votre profil en ajoutant votre description. Vous pouvez sélectionner une catégorie dans laquelle vous voulez être retrouver.";
+    descrip2.innerText = "Here you can find groups specializing in certain events Business, office, small group, games..., Create and personalize your profile by adding your description. You can select a category in which you want to be found.";
     article.appendChild(descrip2);
 
     boutonConnexion()
@@ -108,13 +108,13 @@ function displayInscription() {
     document.getElementById("section_connextion").appendChild(article)
 
     let img = document.createElement("img");
-    img.src = "/picture/logo/logo_transparent.png"
+    img.src = "/frontend/picture/logo/logo_transparent.png"
     img.alt = ""
     article.appendChild(img);
 
     let title = document.createElement("h1")
     title.className = "main_title white";
-    title.innerText = "Inscription sur Event-V";
+    title.innerText = "Registration on Event-V";
     article.appendChild(title);
 
     let div8 = document.createElement("div");
@@ -123,7 +123,7 @@ function displayInscription() {
 
     let eventTag = document.createElement("p");
     eventTag.className = "white";
-    eventTag.innerText = "*Event-tag";
+    eventTag.innerText = "*Event-pseudo";
     div8.appendChild(eventTag);
 
     let texteventTag = document.createElement("input");
@@ -138,7 +138,7 @@ function displayInscription() {
 
     let prenom = document.createElement("p");
     prenom.className = "white";
-    prenom.innerText = "*Prénom";
+    prenom.innerText = "*First name";
     div1.appendChild(prenom);
 
     let textPrenom = document.createElement("input");
@@ -153,7 +153,7 @@ function displayInscription() {
 
     let nom = document.createElement("p");
     nom.className = "white";
-    nom.innerText = "*Nom";
+    nom.innerText = "*Name";
     div2.appendChild(nom);
 
     let textNom = document.createElement("input");
@@ -168,7 +168,7 @@ function displayInscription() {
 
     let email = document.createElement("p");
     email.className = "white";
-    email.innerText = "*Email";
+    email.innerText = "*E-mail";
     div3.appendChild(email);
 
     let inputEmail = document.createElement("input")
@@ -183,7 +183,7 @@ function displayInscription() {
 
     let pass = document.createElement("p");
     pass.className = "white";
-    pass.innerText = "*2 fois Mot de passe (8 caractère minimum)";
+    pass.innerText = "*Write 2 times Password (8 characters minimum)";
     div4.appendChild(pass);
 
     let inputPass = document.createElement("input")
@@ -211,7 +211,7 @@ function displayInscription() {
     let btnInscrip = document.createElement("p");
     btnInscrip.className = "btn_in";
     btnInscrip.id = "inscription";
-    btnInscrip.innerText = "Inscription";
+    btnInscrip.innerText = "Registration";
     div6.appendChild(btnInscrip);
 
     let div7 = document.createElement("div");
@@ -221,7 +221,7 @@ function displayInscription() {
     let btnBack = document.createElement("p");
     btnBack.className = "btn_in";
     btnBack.id = "back";
-    btnBack.innerText = "Annuler";
+    btnBack.innerText = "Cancel";
     div6.appendChild(btnBack);
 
     displayConnexionBack()
@@ -233,7 +233,7 @@ function boutonConnexion() {
     let boutonConnexion = document.getElementById("submit")
 
     boutonConnexion.addEventListener("click", function () {
-        document.location.href = "/index.html";
+        document.location.href = "/frontend/index.html";
     })
 }
 function displayConnexionBack() {

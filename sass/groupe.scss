@@ -2,10 +2,12 @@
 @import "./utils/animation";
 @import "./utils/scrollbar";
 
+@import "./components/bouton";
 @import "./components/checkbox";
 @import "./components/bouton";
 
 @import "./base/body";
 @import "./layout/header";
-@import "./layout/contact-main";
-@import "./layout/footer"
+@import "./layout/groupe_main";
+@import "./layout/profil_description";
+@import "./layout/footer";

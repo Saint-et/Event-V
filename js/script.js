@@ -20,7 +20,7 @@ function display_party() {
 
   let img_card = document.createElement("img")
   img_card.className = "card_image";
-  img_card.src = "/picture/logo/logo_transparent.png";
+  img_card.src = "/frontend/picture/logo/logo_transparent.png";
   img_card.alt = "";
   img_container.appendChild(img_card);
 
@@ -36,7 +36,7 @@ function display_party() {
 
   let text_card_content_nd2 = document.createElement("p");
   text_card_content_nd2.className = "text_card_content_nd2 cursor_pointer_copytext";
-  text_card_content_nd2.innerText = "Quitter";
+  text_card_content_nd2.innerText = "leave";
   text_card.appendChild(text_card_content_nd2);
 })
 }
